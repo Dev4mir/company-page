@@ -1,5 +1,5 @@
 @import "custom";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 $nav-break: 850px;
 $main-page-bgcolor: #ECECEC;
@@ -55,15 +55,53 @@ body {
 main {
   margin-top: 35px;
 }
-.container-fluid{
+.container-fluid {
   padding-left: 25px;
   padding-right: 25px;
 }
 
 header {
-  .header-title{
+  .header-title {
     text-align: center;
     color: #27699D;
     text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .header-content {
+    text-align: justify;
+  }
+  /* Slider */
+  .slider-image {
+    margin: 0 auto;
+    height: 365px;
+  }
+  .slick-prev:before{
+    display: none;
+    font-family: "Font Awesome 5 Solid";
+    content: "\f053";
+  }
+  .slick-prev{
+    left: 0;
+  }
+  .slick-next:before {
+    display: none;
+    font-family: "Font Awesome 5 Solid";
+    content: "\f054";
+  }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev, .slick-next {
+    font-size: 25px;
+    padding: 30px 15px;
+    width: auto;
+    height:  auto;
+    color: #fff;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
