@@ -3,11 +3,20 @@
 
 $nav-break: 850px;
 $main-page-bgcolor: #ECECEC;
+$border-active-list: #0B6FBB;
+$title-color : #27699D;
 
 body {
   background-color: $main-page-bgcolor;
 }
-
+.row {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.container-fluid {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 .navbar{
   padding: 0;
   background-color: #767676;
@@ -40,10 +49,10 @@ body {
     }
   }
   .navbar-nav .nav-item.active-link{
-    border-bottom: 3px solid #0B6FBB;
+    border-bottom: 3px solid $border-active-list;
     @include media-breakpoint-down(sm) {
       border-bottom: 0;
-      border-left: 3px solid #0B6FBB;
+      border-left: 3px solid $border-active-list;
     }
   }
   .navbar-nav .nav-link{
@@ -55,15 +64,13 @@ body {
 main {
   margin-top: 35px;
 }
-.container-fluid {
-  padding-left: 25px;
-  padding-right: 25px;
-}
 
 header {
+  margin-bottom: 40px;
+
   .header-title {
     text-align: center;
-    color: #27699D;
+    color: $title-color;
     text-transform: uppercase;
     margin-bottom: 30px;
   }
@@ -103,5 +110,108 @@ header {
   .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+.countries-select {
+  text-align: center;
+
+  .country-flag {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    img {
+      width: 75%;
+    }
+  }
+}
+
+.tabcontent {
+  display: none;
+  padding: 35px 10px;
+  background-color: #E0E0E0;
+
+  .country-title {
+    color: $title-color;
+    text-transform: uppercase;
+  }
+  .country-content {
+    font-size: 13px;
+    margin-top: 15px;
+    color: #7A7A7A;
+  }
+  a.btn {
+    padding: 6px 35px;
+    border-radius: 0;
+    margin-top: 40px;
+  }
+  a.btn.row-btn {
+    display: none;
+  }
+  img.tab-content-img {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    a.btn.column-btn {
+      display: none;
+    }
+    a.btn.row-btn {
+      display: block;
+      padding: 6px 0;
+    }
+  }
+}
+.countries {
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+
+  .tab {
+    overflow: hidden;
+    border-top: 1px solid #707070;
+
+    div {
+      background-color: $main-page-bgcolor;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      border-top: 3px solid $main-page-bgcolor;
+      transition: all 500ms;
+    }
+    div:hover {
+      background-color: #E6E6E6;
+    }
+    div.active {
+      background-color: #E0E0E0;
+      border-color: $border-active-list;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      border-top: 0;
+      border-left: 1px solid #707070;
+
+      div {
+        padding: 14px 0;
+        border-top: 0;
+        border-left: 3px solid $main-page-bgcolor;
+      }
+      div.active {
+        border-color: #0B6FBB;
+      }
+    }
+  }
+}
+.countries-view {
+  @include media-breakpoint-down(sm) {
+    padding: 0;
+  }
+  .countries-view-selected {
+    @include  media-breakpoint-down(sm) {
+      margin-left: 0;
+    };
   }
 }
