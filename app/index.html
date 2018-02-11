@@ -15,7 +15,7 @@
   <body>
 
     <!-- * Navbar * -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light">
       <a class="navbar-brand" href="/">LOGO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at ma
             </p>
           </div>
           <div class="col-sm-16 col-md-8">
-            <div class="slick-carousel-fade" >
+            <div class="slick-carousel-images">
               <div>
                 <img class="slider-image" src="assets/imgs/slide_1.png">
               </div>
@@ -88,43 +88,43 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at ma
       <!-- Countries Section -->
       <section>
         <div class="row">
-          <div class="col-4 col-md-16 countries">
+          <div class="col-3 col-md-16 countries">
             <div class="row tab countries-select">
-              <div class="col-sm-16 col-md-2 country-flag tablinks" id="egyptBtn" onclick="openCity(event, 'egypt')">
+              <div class="col-sm-16 col-md-2 country-flag" id="egyptBtn" onclick="openCity(event, 'egypt')">
                 <img src="assets/imgs/Layer 68.png">
                 <p>Egypt</p>
               </div>
-              <div class="col-sm-16 col-md-2 country-flag tablinks" onclick="openCity(event, 'nigeria')">
+              <div class="col-sm-16 col-md-2 country-flag" onclick="openCity(event, 'nigeria')">
                 <img src="assets/imgs/Layer 69.png">
                 <p>Nigeria</p>
               </div>
-              <div class="col-sm-16 col-md-2 country-flag tablinks" onclick="openCity(event, 'uk')">
+              <div class="col-sm-16 col-md-2 country-flag" onclick="openCity(event, 'uk')">
                 <img src="assets/imgs/Layer 71.png">
                 <p>UK</p>
               </div>
-              <div class="col-sm-16 col-md-2 country-flag tablinks" onclick="openCity(event, 'cuba')">
+              <div class="col-sm-16 col-md-2 country-flag" onclick="openCity(event, 'cuba')">
                 <img src="assets/imgs/Layer 70.png">
                 <p>Cuba</p>
               </div>
-              <div class="col-sm-16 col-md-2 country-flag tablinks" onclick="openCity(event, 'singapore')">
+              <div class="col-sm-16 col-md-2 country-flag" onclick="openCity(event, 'singapore')">
                 <img src="assets/imgs/Layer 72.png">
                 <p>Singapore</p>
               </div>
-              <div class="col-sm-16 col-md-2 country-flag tablinks" onclick="openCity(event, 'uae')">
+              <div class="col-sm-16 col-md-2 country-flag" onclick="openCity(event, 'uae')">
                 <img src="assets/imgs/Layer 75.png">
                 <p>UAE</p>
               </div>
-              <div class="col-sm-16 col-md-2 country-flag tablinks" onclick="openCity(event, 'south africa')">
+              <div class="col-sm-16 col-md-2 country-flag" onclick="openCity(event, 'southAfrica')">
                 <img src="assets/imgs/Layer 73.png">
                 <p>South Africa</p>
               </div>
-              <div class="col-sm-16 col-md-2 country-flag tablinks" onclick="openCity(event, 'algeria')">
+              <div class="col-sm-16 col-md-2 country-flag" onclick="openCity(event, 'algeria')">
                 <img src="assets/imgs/Layer 75.png">
                 <p>Algeria</p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-16 countries-view">
+          <div class="col-13 col-md-16 countries-view">
             <div class="row countries-view-selected">
               <div id="egypt" class="col-sm-16 tabcontent">
                 <div class="row">
@@ -160,6 +160,126 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at ma
                   </div>
                   <div class="col-16 col-md-8">
                     <img class="tab-content-img" src="assets/imgs/slide_4.jpg">
+                  </div>
+                  <div class="col-16">
+                    <a class="btn btn-primary row-btn" href="#" role="button">View Website</a>
+                  </div>
+                </div>
+              </div>
+              <div id="uk" class="col-sm-16 tabcontent">
+                <div class="row">
+                  <div class="col-16 col-md-8">
+                    <h2 class="country-title">United Kingdoom</h2>
+                    <p class="country-content">
+                      consectetur adipiscing elit. Sed gravida lacus at mauris semper pu
+                      lvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                      Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.
+                    </p>
+                    <a class="btn btn-primary column-btn" href="#" role="button">View Website</a>
+                  </div>
+                  <div class="col-16 col-md-8">
+                    <img class="tab-content-img" src="assets/imgs/slide_2.jpg">
+                  </div>
+                  <div class="col-16">
+                    <a class="btn btn-primary row-btn" href="#" role="button">View Website</a>
+                  </div>
+                </div>
+              </div>
+              <div id="cuba" class="col-sm-16 tabcontent">
+                <div class="row">
+                  <div class="col-16 col-md-8">
+                    <h2 class="country-title">Cuba</h2>
+                    <p class="country-content">
+                      consectetur adipiscing elit. Sed gravida lacus at mauris semper pu
+                      lvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                      Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.
+                    </p>
+                    <a class="btn btn-primary column-btn" href="#" role="button">View Website</a>
+                  </div>
+                  <div class="col-16 col-md-8">
+                    <img class="tab-content-img" src="assets/imgs/slide_3.png">
+                  </div>
+                  <div class="col-16">
+                    <a class="btn btn-primary row-btn" href="#" role="button">View Website</a>
+                  </div>
+                </div>
+              </div>
+              <div id="singapore" class="col-sm-16 tabcontent">
+                <div class="row">
+                  <div class="col-16 col-md-8">
+                    <h2 class="country-title">Singapore</h2>
+                    <p class="country-content">
+                      consectetur adipiscing elit. Sed gravida lacus at mauris semper pu
+                      lvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                      Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.
+                    </p>
+                    <a class="btn btn-primary column-btn" href="#" role="button">View Website</a>
+                  </div>
+                  <div class="col-16 col-md-8">
+                    <img class="tab-content-img" src="assets/imgs/slide_5.jpg">
+                  </div>
+                  <div class="col-16">
+                    <a class="btn btn-primary row-btn" href="#" role="button">View Website</a>
+                  </div>
+                </div>
+              </div>
+              <div id="uae" class="col-sm-16 tabcontent">
+                <div class="row">
+                  <div class="col-16 col-md-8">
+                    <h2 class="country-title">UAE</h2>
+                    <p class="country-content">
+                      consectetur adipiscing elit. Sed gravida lacus at mauris semper pu
+                      lvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                      Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.
+                    </p>
+                    <a class="btn btn-primary column-btn" href="#" role="button">View Website</a>
+                  </div>
+                  <div class="col-16 col-md-8">
+                    <img class="tab-content-img" src="assets/imgs/slide_4.jpg">
+                  </div>
+                  <div class="col-16">
+                    <a class="btn btn-primary row-btn" href="#" role="button">View Website</a>
+                  </div>
+                </div>
+              </div>
+              <div id="southAfrica" class="col-sm-16 tabcontent">
+                <div class="row">
+                  <div class="col-16 col-md-8">
+                    <h2 class="country-title">South Africa</h2>
+                    <p class="country-content">
+                      consectetur adipiscing elit. Sed gravida lacus at mauris semper pu
+                      lvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                      Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.
+                    </p>
+                    <a class="btn btn-primary column-btn" href="#" role="button">View Website</a>
+                  </div>
+                  <div class="col-16 col-md-8">
+                    <img class="tab-content-img" src="assets/imgs/slide_3.png">
+                  </div>
+                  <div class="col-16">
+                    <a class="btn btn-primary row-btn" href="#" role="button">View Website</a>
+                  </div>
+                </div>
+              </div>
+              <div id="algeria" class="col-sm-16 tabcontent">
+                <div class="row">
+                  <div class="col-16 col-md-8">
+                    <h2 class="country-title">Algeria</h2>
+                    <p class="country-content">
+                      consectetur adipiscing elit. Sed gravida lacus at mauris semper pu
+                      lvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+                      Sed gravida lacus at mauris semper pulvinar. Integer nec erat et orci venenatis molestie a a risus.
+                    </p>
+                    <a class="btn btn-primary column-btn" href="#" role="button">View Website</a>
+                  </div>
+                  <div class="col-16 col-md-8">
+                    <img class="tab-content-img" src="assets/imgs/slide_2.jpg">
                   </div>
                   <div class="col-16">
                     <a class="btn btn-primary row-btn" href="#" role="button">View Website</a>
